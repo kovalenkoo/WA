@@ -16,7 +16,7 @@ namespace Tests
     {
         [Test]
 
-        public void UploadTest()
+        public void _1UploadTest()
         {
             var client = new RestClient("https://content.dropboxapi.com/2/files/upload");
             client.Timeout = -1;
@@ -30,7 +30,7 @@ namespace Tests
             Assert.AreEqual(true, response.Content.Contains("exam"));
         }
         [Test]
-        public void GetFileMetaDataTest()
+        public void _2GetFileMetaDataTest()
         {
             var client = new RestClient("https://api.dropboxapi.com/2/files/get_metadata");
             client.Timeout = -1;
@@ -43,7 +43,7 @@ namespace Tests
             Assert.AreEqual(true, response.Content.Contains("file"));
         }
         [Test]
-        public void DeleteTest()
+        public void _3DeleteTest()
         {
             var client = new RestClient("https://api.dropboxapi.com/2/files/delete");
             client.Timeout = -1;
